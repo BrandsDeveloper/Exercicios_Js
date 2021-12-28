@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criança esperança</title>
+</head>
+<body>
+
+    <script>
+
+        // document.write('---------------------- <br /> Criança Esprança <br/> ---------------------- <br/> Muito Obrigado por ajudar <br/> [1] para doar RS10 <br/> [2] para doar RS25 <br/> [3] para doar RS50 <br/> [4] para outros valores <br/> [5] para cancelar <br />');
+        
+        alert('---------------------- Criança Esperança ----------------------\n Muito Obrigado por ajudar \n [1] para doar R$ 10 \n [2] para doar R$ 25 \n [3] para doar R$ 50 \n [4] para outros valores \n [5] para cancelar \n');
+
+        var opcao = prompt("Digite uma das opções para doar:");
+        opcao = parseInt(opcao);
+        var valor
+
+        switch (opcao) {
+
+            case 1:
+                valor = 10;
+                break
+
+            case 2:
+                valor = 25;
+                break
+
+            case 3:
+                valor = 50;
+                console.log(valor)
+                break
+
+            case 4:
+                valor = prompt("Qual valor você tem em mente? ");
+                break
+
+            case 5:
+                valor = 0;
+                break
+
+            default:
+                document.write("Tudo bem, vamos tentar novamente <br />");
+                break
+        }
+
+        console.log(valor)
+
+
+        document.write("Sua doação foi um valor de R$" + valor + "<br />");
+        document.write(" Muito Obrigado");
+
+    </script>
+
+</body>
+</html>

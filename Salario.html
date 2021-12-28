@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sálario</title>
+</head>
+<body>
+
+    <script>
+
+        var fun = prompt("Digite o nome do funcionario");
+        var sal = prompt("Digite o salário do funcionario");
+        var dep = prompt("Digite a quantidade de dependentes");
+
+        var Nsal 
+        Nsal = parseFloat(Nsal);
+        dep = parseFloat(dep);
+        sal = parseFloat(sal);
+        
+
+        switch (dep) {
+            case 0:
+                Nsal = sal + (sal*5/100);
+                break;
+
+            case 1:
+                Nsal = sal + (sal*10/100);
+                break;
+
+            case 2:
+                Nsal = sal + (sal*10/100);
+                break;
+
+            case 3:
+                Nsal = sal + (sal*10/100);
+                break;
+
+            case 4:
+                Nsal = sal + (sal*15/100);
+                break;
+                    
+            case 5:
+                Nsal = sal + (sal*15/100);
+                break;
+                    
+            case 6:
+                Nsal = sal + (sal*15/100);
+                break;
+                    
+            default:
+                Nsal = sal + (sal*18/100);
+                break;
+        }
+
+
+        document.write("O novo salário de " + fun + " será de R$ " + Nsal);
+
+    </script>
+
+</body>
+</html>

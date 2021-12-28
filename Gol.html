@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gol</title>
+</head>
+<body>
+
+    <script>
+
+        alert("Bangu x Madureira")
+
+        var bangu = prompt("Quantos gols do bangu ?");
+        var madureira = prompt("Quantos gols do madureira ?");
+        bangu = parseInt(bangu)
+        madureira = parseInt(madureira)
+
+        var dif = Math.abs(bangu - madureira);
+        var status
+
+        if (dif == 0) {
+            status = "Empate";
+        }else if ( dif <=4 ){
+            status = "Partida normal";
+        } else {
+            status = "Goleada";
+        }
+
+        document.write("Diferença de: " + dif + "<br />");
+        document.write("Status: " + status);
+        
+    </script>
+
+</body>
+</html>
