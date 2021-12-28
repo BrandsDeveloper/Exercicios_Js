@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Operadores Lógicos</title>
+    </head>
+
+  <body>
+      
+<script>
+
+    /* if(2 == 2 || ){
+        document.write('Verdadeiro');
+    }else{
+        document.write('Falso');
+    } */
+
+    var nota = prompt("Digite sua nota: ");
+    var faltas = prompt("Digite a quantidade de faltas: ");
+
+    var media = 7;
+    var faltas_maximas = 15;
+
+    faltas_maximas = 6;
+
+    console.log(faltas_maximas)
+
+    if( nota >= media || faltas <= faltas_maximas ){
+        document.write('<h1> Aprovado </h1>');
+    }else{
+        document.write('<h1> Reprovado </h1>');
+    }
+
+    var result = (nota >= media || faltas <= faltas_maximas) ? 'verdadeiro' : 'falso'
+        console.log(result)
+
+</script>
+
+  </body>
+</html>

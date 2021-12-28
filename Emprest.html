@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprest com juros de 20%</title>
+</head>
+<body>
+    
+    <script>
+
+        var emprest = prompt("Digite quanto voce quer: ");
+        var parcelas = prompt("Digite a quantidade de parcelas: ");
+        emprest = parseInt(emprest);
+        parcelas= parseInt(parcelas);
+        var juros = emprest * 20 / 100;
+        var total = emprest + juros;
+        var result = total / parcelas;
+
+        document.write("O valor a ser pego é de R$ " + total + " resultando em uma quantidade de " + parcelas + " parcelas a serem pagas, dando um valor de R$ " + result + " por mês");
+        
+    </script>
+
+
+</body>
+</html>
