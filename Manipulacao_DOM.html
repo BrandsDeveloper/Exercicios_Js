@@ -8,14 +8,15 @@
 
     <style>
 
-        #exemplo{
-            width:500px;
-            height: 500px;
+        #exemplo, #Exemplo{
+            width: 100px;
+            height: 100px;
             border: 1px solid black;
         }
 
         .verde{
             background-color: green;
+            color: blanchedalmond;
         }
         .vermelho{
             background-color: red;
@@ -24,15 +25,35 @@
             background-color: blue;
         }
 
+        .preto{
+            background-color: black;
+            color: white;
+        }
+
     </style>
 
 </head>
 <body>
-    <h1 id="exemplo"> Seja Bem Vindo(a) </h1>
 
-    <button onclick="verde()">Verde</button>
-    <button onclick="vermelho()">Vermelho</button>
-    <button onclick="azul()">Azul</button>
+    <div>
+
+        <h1 id="exemplo"> Olá mundo </h1>
+
+        <button onclick="verde()">Verde</button>
+        <button onclick="vermelho()">Vermelho</button>
+        <button onclick="azul()">Azul</button>
+        
+    </div>
+
+    <div>
+
+        <h1 class="preto" id="Exemplo"> Teste </h1>
+
+        <button onclick="trocar()">
+            Trocar
+        </button>
+
+    </div>
 
     <script>
 
@@ -50,6 +71,17 @@
                 document.querySelector("#exemplo").classList.remove("vermelho");
                 document.querySelector("#exemplo").classList.remove("verde");
                 document.querySelector("#exemplo").classList.add("azul");
+            }
+
+            function trocar() {
+
+                if (document.querySelector("#Exemplo").classList.contains("preto")) {
+                    document.querySelector("#Exemplo").classList.remove("preto");
+                    document.querySelector("#Exemplo").classList.add("verde");
+                } else{
+                    document.querySelector("#Exemplo").classList.remove("verde");
+                    document.querySelector("#Exemplo").classList.add("preto");
+                }
             }
 
 
