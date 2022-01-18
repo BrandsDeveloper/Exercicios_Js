@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <style>
+
+        #exemplo{
+            width:500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        .verde{
+            background-color: green;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .azul{
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 id="exemplo"> Seja Bem Vindo(a) </h1>
+
+    <button onclick="verde()">Verde</button>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="azul()">Azul</button>
+
+    <script>
+
+        function verde() {
+                document.querySelector("#exemplo").classList.remove("azul");
+                document.querySelector("#exemplo").classList.remove("vermelho");
+                document.querySelector("#exemplo").classList.add("verde");
+            }
+            function vermelho() {
+                document.querySelector("#exemplo").classList.remove("azul");
+                document.querySelector("#exemplo").classList.remove("verde");
+                document.querySelector("#exemplo").classList.add("vermelho");
+            }
+            function azul() {
+                document.querySelector("#exemplo").classList.remove("vermelho");
+                document.querySelector("#exemplo").classList.remove("verde");
+                document.querySelector("#exemplo").classList.add("azul");
+            }
+
+
+    </script>
+    
+</body>
+</html>
